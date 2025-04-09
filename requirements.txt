@@ -1,7 +1,7 @@
 flask
 flask-cors
-gunicorn
 transformers
 torch
 scikit-learn
 joblib
+vercel-wsgi
