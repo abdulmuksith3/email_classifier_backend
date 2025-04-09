@@ -13,8 +13,8 @@ CORS(app)
 vectorizer_with_links = joblib.load('model/Link_Analysis/tfidf_vectorizer.pkl')
 model_with_links = joblib.load('model/Link_Analysis/phishing_url_model.pkl')
 
-bert_model = BertForSequenceClassification.from_pretrained("model/NLP_Model", local_files_only=True)
-bert_tokenizer = BertTokenizer.from_pretrained("model/NLP_Model", local_files_only=True)
+bert_model = BertForSequenceClassification.from_pretrained("abdulmuksith3/nlp_model")
+bert_tokenizer = BertTokenizer.from_pretrained("abdulmuksith3/nlp_model")
 
 label_map = {0: "ham", 1: "phishing"}
 
