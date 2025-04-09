@@ -5,6 +5,7 @@ import re
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 from utils.link_detector import contains_links
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -57,5 +58,8 @@ def classify_email():
         'link_analysis': link_analysis_result
     })
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+

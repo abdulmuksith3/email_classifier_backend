@@ -1,7 +1,6 @@
 flask
 flask-cors
-gunicorn
-transformers
 torch
-scikit-learn
+transformers
 joblib
+scikit-learn
